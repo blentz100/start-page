@@ -11,7 +11,7 @@ function App() {
     <div className="App" style={{display: 'flex', flexDirection: 'row'}}>
 		<Card style={{ width: '8rem' }}> 
 			<Card.Body> 
-				<Card.Title className="card-title">Pacific</Card.Title>
+				<Card.Title className="card-title">Pacific1</Card.Title>
 				<Card.Text>
 					<Clock format={'hh:mm:ss:a'} ticking={true} timezone={'US/Pacific'} />
 				</Card.Text>
