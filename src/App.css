@@ -7,6 +7,25 @@
   pointer-events: none;
 }
 
+/* Make the time font smaller */
+.card-text{
+	font-size:13px;
+}
+
+/* using the important flag because this size gets overridden elsewhere */
+.card-title{
+	font-size: 15px !important;
+}
+
+/* Make the Title font smaller */
+.h5{
+	font-size: 20px;
+}
+
+h5{
+	font-size: 20px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
