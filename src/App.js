@@ -9,7 +9,21 @@ import Nav from 'react-bootstrap/Nav'
 import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
 import Button from 'react-bootstrap/Button'
-//import beach from '../src/images/beach.jpg'
+import ButtonGroup from 'react-bootstrap/buttongroup';
+import Container from 'react-bootstrap/container';
+import NeighborsList from './Components/NeighborsList';
+import About from './Components/About.js';
+import Resources from './Components/Resources'
+import Home from './Components/Home'
+import Todo from './Components/Todo'
+import Maricopa from './Components/Maricopa'
+import Test from './Components/Test'
+
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route
+} from 'react-router-dom';
 
 function App() {
   return (
@@ -30,6 +44,58 @@ function App() {
   </Navbar>
 	  </div>
 
+		<Container>
+			<Router>
+				<div>
+					<ButtonGroup>
+						<Button href="/" variant="outline-primary">
+							Home
+						</Button>
+						<Button href="/neighbors" variant="outline-primary">
+							Neighbors
+						</Button>
+						<Button href="/about" variant="outline-primary">
+						About
+						</Button>
+						<Button href="/resources" variant="outline-primary">
+							Resources
+						</Button>
+						<Button href="/todo" variant="outline-primary">
+							Todo
+						</Button>
+						<Button href="/maricopa" variant="outline-primary">
+							Maricopa
+						</Button>
+						<Button href="/test" variant="outline-primary">
+							Test
+						</Button>
+					</ButtonGroup>
+					<Switch>
+						<Route path='/resources'>
+							<Resources />
+						</Route>
+						<Route path='/about'>
+							<About  />
+						</Route>
+						<Route path="/todo">
+							<Todo />
+						</Route>
+						<Route path="/neighbors">
+							<NeighborsList />
+						</Route>
+						<Route path="/maricopa">
+							<Maricopa/>
+						</Route>
+						<Route path="/test">
+							<Test />
+						</Route>
+						<Route path="/">
+							<Home />
+						</Route>
+					</Switch>
+				</div>
+			</Router>
+		</Container>
 
 
 
