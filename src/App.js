@@ -35,7 +35,8 @@ function App() {
     <Nav className="mr-auto">
       <Nav.Link href="#home">Home</Nav.Link>
       <Nav.Link href="#features">Git Commands</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
+	  <Nav.Link
+		  href="https://docs.google.com/spreadsheets/d/1JxTrYTtesCj7o7YgG-H4jFAOpWpvZYc93USXO6DlvL8/edit#gid=0">Pushups</Nav.Link>
     </Nav>
     <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
