@@ -21,6 +21,7 @@ function App() {
     <Nav className="mr-auto">
       <Nav.Link href="#home">Home</Nav.Link>
       <Nav.Link href="#features">Git Commands</Nav.Link>
+	  <Nav.Link href="https://tmuxcheatsheet.com/">Tmux </Nav.Link>
 	  <Nav.Link
 		  href="https://docs.google.com/spreadsheets/d/1JxTrYTtesCj7o7YgG-H4jFAOpWpvZYc93USXO6DlvL8/edit#gid=0">Pushups</Nav.Link>
     </Nav>
@@ -96,6 +97,9 @@ git branch -M main
 git remote add origin https://github.com/yourusernamehere/yourreponame.git
 git push -u origin main
           `}</pre>
+
+
+
   </div>
   );
 }
