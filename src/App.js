@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React  from 'react';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import ButtonGroup from 'react-bootstrap/buttongroup';
+//import ButtonGroup from 'react-bootstrap/buttongroup';
 import Home from './Components/Home';
 import TimeZones from './Components/TimeZones';
 import Git from './Components/Git';
@@ -21,7 +21,6 @@ function App() {
 			<Navbar bg="primary" variant="dark">
 					<Navbar.Brand href="#home">Navbar</Navbar.Brand>
 					<Nav className="mr-auto">
-						<ButtonGroup>
 							<Nav.Link href="/Home">
 								 Home 
 							</Nav.Link>
@@ -30,7 +29,6 @@ function App() {
 							<Nav.Link href="https://tmuxcheatsheet.com/">Tmux </Nav.Link>
 							<Nav.Link
 								  href="https://docs.google.com/spreadsheets/d/1JxTrYTtesCj7o7YgG-H4jFAOpWpvZYc93USXO6DlvL8/edit#gid=0">Pushups</Nav.Link>
-						</ButtonGroup>
 					</Nav>
 			</Navbar>
 					<Switch>
