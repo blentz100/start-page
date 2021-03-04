@@ -55,3 +55,12 @@ h5{
     transform: rotate(360deg);
   }
 }
+
+/* from https://www.freecodecamp.org/news/react-and-googlesheets/ */
+.form{
+  width: 500px;
+}
+
+.container{
+  padding:20px
+}

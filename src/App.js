@@ -3,10 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React  from 'react';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-//import ButtonGroup from 'react-bootstrap/buttongroup';
 import Home from './Components/Home';
 import TimeZones from './Components/TimeZones';
 import Git from './Components/Git';
+import Pushups from './Components/Pushups';
 
 import {
 	BrowserRouter as Router,
@@ -27,8 +27,7 @@ function App() {
 							<Nav.Link href="/TimeZones">Time Zones</Nav.Link>
 							<Nav.Link href="/Git">Git Commands</Nav.Link>
 							<Nav.Link href="https://tmuxcheatsheet.com/">Tmux </Nav.Link>
-							<Nav.Link
-								  href="https://docs.google.com/spreadsheets/d/1JxTrYTtesCj7o7YgG-H4jFAOpWpvZYc93USXO6DlvL8/edit#gid=0">Pushups</Nav.Link>
+							<Nav.Link href="/Pushups">Pushups</Nav.Link>
 					</Nav>
 			</Navbar>
 					<Switch>
@@ -38,11 +37,17 @@ function App() {
 						<Route path='/TimeZones'>
 							<TimeZones/>
 						</Route>
+						<Route path='/Pushups'>
+							<Pushups/>
+						</Route>
 						<Route path='/Git'>
 							<Git/>
 						</Route>
 					</Switch>
 		</Router>
+
+
+
   </div>
   );
 }

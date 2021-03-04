@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// This is from https://www.freecodecamp.org/news/react-and-googlesheets/
+import 'semantic-ui-css/semantic.min.css'
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
